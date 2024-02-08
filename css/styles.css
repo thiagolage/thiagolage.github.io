@@ -44,7 +44,10 @@
     padding: 50px;
 }
 
+
 /* Bio Container */
+
+
 #bio-container h2 {
     margin-bottom: 25px;
 }
@@ -90,7 +93,7 @@
 
 #email-container ion-icon,
 #email-container a {
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
 }
 
 #email-container a {
