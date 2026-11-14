@@ -1,91 +1,137 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Thiago Augusto</title>
-
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- Dev Icon Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <!--CSS do Projeto-->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101718">
+  <meta name="description" content="Portfólio profissional de Thiago Augusto: trajetória em desenvolvimento de software, análise de sistemas e liderança de equipes de tecnologia.">
+  <title>Thiago Augusto — Tecnologia & liderança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Thiago Augusto</h2>
-            <img id="bio-image" src="img/Perfil.JPG" alt="Thiago Augusto">
-            <p>Olá, meu nome é Thiago Augusto e sou <span class="highlight">Desenvolvedor FullStack</span></p>
-            <p id="welcome-text">Seja bem-vindo!</p>
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/thiago-augusto-aa160468/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/thiagolage" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/thiago_augs/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:thiagolage@gmail.com">thiagolage@gmail.com</a>
-            </div>
-        </aside>
-        <section id="about-container">
-            <h1 id="name">Thiago Augusto</h1>
-            <p id="title"><span class="highlight">Desenvolvedor Fullstack</span></p>
-            <p class="description">Sou um desenvolvedor especializado em linguagem C# e plataforma .NET. 
-                Também possuo experiência com <span class="highlight">gestão de equipes de desenvolvimento, definições de regras de negócio e levantamento de requisitos.</span></p>
-            <p class="description">Atuo tanto no <span class="highlight">BackEnd</span> quanto no <span class="highlight">FrontEnd</span>. 
-                Tenho facilidade para aprender novas tecnologias e procuro sempre me manter atualizado para escrever códigos cada vez melhores e com mais qualidade.</p>
-            <a href="https://github.com/thiagolage?tab=projects" target="_blank" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Front-End</p>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Back-End</p>
-                    <i class="devicon-csharp-plain colored"></i>
-                    <i class="devicon-dot-net-plain-wordmark colored"></i>
-                    <i class="devicon-dotnetcore-plain colored"></i>
-                    <i class="devicon-swift-plain-wordmark colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
-                    <i class="devicon-oracle-original colored"></i>
-                    <i class="devicon-firebase-plain-wordmark colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Tools</p>
-                    <i class="devicon-visualstudio-plain colored"></i>
-                    <i class="devicon-vscode-plain-wordmark colored"></i>
-                    <i class="devicon-github-original-wordmark"></i>
-                    <i class="devicon-jira-plain-wordmark colored"></i>
-                    <i class="devicon-confluence-plain-wordmark colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Estudando...</p>
-                    <i class="devicon-angularjs-plain colored"></i>
-                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                    <i class="devicon-azure-plain-wordmark colored"></i>
-                    <i class="devicon-docker-plain-wordmark colored"></i>
-                    <i class="devicon-kubernetes-plain-wordmark colored"></i>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Thiago Augusto, início"><span class="brand-mark">TA</span><span>Thiago Augusto<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a class="nav-link active" href="index.html">Início</a>
+      <a class="nav-link" href="#trajetoria">Trajetória</a>
+      <a class="nav-link" href="#competencias">Competências</a>
+      <a class="nav-cta" href="contato.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PORTFÓLIO PROFISSIONAL <span class="eyebrow-year">· 2026</span></p>
+        <h1>Tecnologia com<br><span>visão de pessoas.</span></h1>
+        <p class="hero-lead">Sou Thiago Augusto, profissional de tecnologia com experiência em desenvolvimento de software, análise de sistemas e liderança de equipes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#trajetoria">Conheça minha trajetória <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="contato.html">Entre em contato <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span class="status-dot"></span> Belo Horizonte, MG <span class="meta-divider">/</span> Brasil</div>
+      </div>
+      <div class="hero-visual" aria-label="Resumo da trajetória profissional">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-core"><img src="assets/profile-thiago.jpg" alt="Thiago Augusto"></div>
+        <span class="visual-label label-top">DESENVOLVIMENTO</span>
+        <span class="visual-label label-right">LIDERANÇA</span>
+        <span class="visual-label label-bottom">ESTRATÉGIA</span>
+        <span class="visual-coord">19°55' S<br>43°56' W</span>
+        <span class="visual-index">01 <span>/</span> 03</span>
+      </div>
+      <div class="hero-bottom"><span>15 ANOS DE EXPERIÊNCIA</span><span class="hero-bottom-line"></span><a href="#sobre">DESCUBRA MAIS <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="intro-section" id="sobre">
+      <div class="shell intro-grid">
+        <p class="section-index">01 <span>—</span> SOBRE</p>
+        <div class="intro-content">
+          <h2>Construindo soluções.<br><em>Desenvolvendo times.</em></h2>
+          <p>Ao longo de 15 anos, atuei em diferentes etapas do desenvolvimento de software — da análise e implementação à gestão de equipes e projetos. Minha trajetória reúne experiências em sistemas corporativos, inteligência de negócios, e-commerce e integração de serviços.</p>
+          <p>Hoje, trabalho na liderança de equipes de desenvolvimento, com foco em evolução de pessoas, organização de entregas e colaboração com as áreas de negócio e produto.</p>
+          <a class="text-link" href="contato.html">Conecte-se comigo <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="intro-stat"><strong>15<span>+</span></strong><span>ANOS EM<br>TECNOLOGIA</span></div>
+      </div>
+    </section>
+
+    <section class="career-section shell" id="trajetoria">
+      <div class="section-heading">
+        <div><p class="section-index">02 <span>—</span> EXPERIÊNCIA</p><h2>Uma trajetória<br><em>em evolução.</em></h2></div>
+        <p class="section-description">Experiências em desenvolvimento, análise de sistemas e liderança, reunidas em uma linha do tempo profissional.</p>
+      </div>
+      <div class="career-list">
+        <article class="career-item current">
+          <div class="career-date"><span>JUN 2024 — ATUAL</span><span class="career-duration">LIDERANÇA</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/vallourec.png" alt=""></span><div><p class="company-line"><strong class="company-name">Vallourec</strong></p><h3>Team Leader</h3><p>Belo Horizonte, MG <span>·</span> Híbrido</p></div></div>
+            <p class="career-summary">Liderança de equipe de desenvolvimento e gestão de projetos, com atenção à evolução das pessoas, prioridades e capacidade de entrega.</p>
+            <div class="detail-grid"><div><h4>EQUIPE & DESENVOLVIMENTO</h4><ul><li>Acompanhamento diário, feedbacks e planos de desenvolvimento individual</li><li>Orientação da equipe para objetivos comuns e desenvolvimento de talentos</li><li>Criação de metas individuais e coletivas, com foco em engajamento e resultados</li><li>Entrevistas para admissão e desligamento</li></ul></div><div><h4>PROJETOS & OPERAÇÃO</h4><ul><li>Refinamento de demandas com clientes e organização de backlog e prioridades</li><li>Gestão de prazos, riscos e capacidade da equipe</li><li>Acompanhamento de Burndown e definição de OKRs e KPIs</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>JAN 2022 — NOV 2023</span><span class="career-duration">1 ANO E 11 MESES</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/bornlogic.png" alt=""></span><div><p class="company-line"><strong class="company-name">Bornlogic</strong></p><h3>Líder de equipe de desenvolvimento de software</h3><p>Belo Horizonte, MG <span>·</span> Remoto</p></div></div>
+            <p class="career-summary">Atuação em liderança de equipe, gestão de projetos e colaboração com Produto.</p>
+            <div class="detail-grid"><div><h4>LIDERANÇA & PROCESSOS</h4><ul><li>Acompanhamento diário, feedbacks, planos de desenvolvimento e repasse técnico</li><li>Entrevistas para admissões e desligamentos</li><li>Definição e acompanhamento de processos, KPIs e diretrizes técnicas e comportamentais</li><li>Comunicação síncrona e assíncrona</li></ul></div><div><h4>PROJETOS & PRODUTO</h4><ul><li>Refinamento de demandas junto ao cliente, organização de backlog e Burndown</li><li>Definição de OKRs</li><li>Avaliação de métricas de produto e revisão de NPS</li><li>Negociação e potencialização da área de Produto</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>NOV 2020 — JAN 2022</span><span class="career-duration">1 ANO E 3 MESES</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/alpargatas.png" alt=""></span><div><p class="company-line"><strong class="company-name">Alpargatas S.A.</strong></p><h3>Líder de equipe de desenvolvimento de software</h3><p>Minas Gerais</p></div></div>
+            <p class="career-summary">Gestão de equipes de desenvolvimento e da plataforma de e-commerce.</p>
+            <div class="detail-grid"><div><h4>EQUIPE</h4><ul><li>Gestão de equipe com desenvolvedores de diferentes níveis de senioridade</li><li>Feedbacks, criação de PDI e repasse técnico</li><li>Reporte direto ao Head de Engenharia da área</li></ul></div><div><h4>PLATAFORMA DE E-COMMERCE</h4><ul><li>Criação e avaliação de relatórios gerenciais</li><li>Geração e distribuição de backlog de atividades</li><li>Acompanhamento de Burndown</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>AGO 2017 — NOV 2020</span><span class="career-duration">3 ANOS E 4 MESES</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/csu.png" alt=""></span><div><p class="company-line"><strong class="company-name">CSU CardSystem</strong></p><h3>Analista de desenvolvimento de software</h3><p>Belo Horizonte, MG</p></div></div>
+            <p class="career-summary">Análise e desenvolvimento de sistema de e-commerce, integração de parceiros e rotinas de teste.</p>
+            <div class="detail-grid"><div><h4>DESENVOLVIMENTO</h4><ul><li>Sistemas de e-commerce em C# na plataforma .NET</li><li>Banco de dados SQL Server</li><li>Desenvolvimento de rotinas de testes</li></ul></div><div><h4>INTEGRAÇÕES & MÉTODOS</h4><ul><li>Integração de parceiros utilizando SOAP e REST</li><li>Criação de APIs de comunicação</li><li>Metodologia ágil Scrum</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>OUT 2012 — MAR 2017</span><span class="career-duration">4 ANOS E 6 MESES</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/stefanini.png" alt=""></span><div><p class="company-line"><strong class="company-name">Stefanini</strong></p><h3>Analista de sistemas</h3><p>Belo Horizonte e Região</p></div></div>
+            <p class="career-summary">Desenvolvimento de sistemas de Business Intelligence e rotinas de extração e transformação de dados.</p>
+            <div class="detail-grid"><div><h4>BUSINESS INTELLIGENCE</h4><ul><li>Desenvolvimento em C# na plataforma .NET</li><li>Banco de dados SQL Server</li><li>Criação de telas de relatórios personalizados</li></ul></div><div><h4>DADOS & MÉTODOS</h4><ul><li>Criação de rotinas ETL (Extract, Transform, Load)</li><li>Criação de tabelas, procedures, triggers e functions</li><li>Metodologia ágil Scrum</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>FEV 2010 — OUT 2012</span><span class="career-duration">2 ANOS E 9 MESES</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/totvs.png" alt=""></span><div><p class="company-line"><strong class="company-name">TOTVS</strong></p><h3>Desenvolvedor de software</h3></div></div>
+            <p class="career-summary">Desenvolvimento e análise de sistemas WinForms e administração de bancos de dados SQL Server.</p>
+            <div class="detail-grid"><div><h4>DESENVOLVIMENTO</h4><ul><li>Sistemas WinForms na plataforma ASP.NET</li><li>Linguagem C# na plataforma .NET</li><li>Levantamento de novas demandas com a área Comercial</li></ul></div><div><h4>BANCO DE DADOS</h4><ul><li>Criação de tabelas, procedures, triggers e functions</li><li>Concessão de permissões e criação de perfis de usuário</li><li>Reuniões com usuários para feedback e brainstorming</li></ul></div></div>
+          </div>
+        </article>
+        <article class="career-item">
+          <div class="career-date"><span>FEV 2009 — FEV 2010</span><span class="career-duration">1 ANO E 1 MÊS</span></div>
+          <div class="career-main"><div class="career-company"><span class="company-logo" aria-hidden="true"><img src="assets/companies/mastermaq.png" alt=""></span><div><p class="company-line"><strong class="company-name">Mastermaq Softwares Ltda</strong></p><h3>Desenvolvedor Web</h3></div></div>
+            <p class="career-summary">Desenvolvimento e manutenção de aplicações desktop e web.</p>
+            <div class="detail-grid"><div><h4>APLICAÇÕES WEB</h4><ul><li>Desenvolvimento para Windows e web em ASP e ASP.NET</li><li>Validação de formulários em JavaScript e rotinas AJAX</li><li>Manutenção simples em WebServices</li></ul></div><div><h4>DADOS & MANUTENÇÃO</h4><ul><li>Administração de banco de dados SQL Server</li><li>Utilização de procedures, triggers e functions</li><li>Manutenção de sistemas desktop em VB.NET</li><li>Análise e confecção de novas demandas</li></ul></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-section" id="competencias"><div class="shell skills-inner">
+      <div><p class="section-index">03 <span>—</span> COMPETÊNCIAS</p><h2>Experiência que<br><em>conecta frentes.</em></h2><p class="skills-lead">Tecnologias e práticas presentes ao longo da minha trajetória profissional.</p></div>
+      <div class="skills-groups">
+        <div class="skill-group"><span class="skill-number">01</span><div><h3>Desenvolvimento</h3><p>C# · .NET · ASP.NET · WinForms · VB.NET · JavaScript · AJAX</p></div></div>
+        <div class="skill-group"><span class="skill-number">02</span><div><h3>Dados & integrações</h3><p>SQL Server · ETL · Procedures · Triggers · Functions · SOAP · REST · APIs</p></div></div>
+        <div class="skill-group"><span class="skill-number">03</span><div><h3>Liderança & gestão</h3><p>Gestão de equipes · PDI · Feedback · Entrevistas · Desenvolvimento de pessoas</p></div></div>
+        <div class="skill-group"><span class="skill-number">04</span><div><h3>Projetos & produto</h3><p>Scrum · Backlog · Burndown · OKRs · KPIs · Métricas de produto · NPS</p></div></div>
+      </div>
+    </div></section>
+
+    <section class="closing-section shell"><div class="closing-card"><div><p class="eyebrow"><span class="eyebrow-line"></span> PRÓXIMO PASSO</p><h2>Vamos conversar<br><em>sobre tecnologia?</em></h2></div><a class="round-link" href="contato.html" aria-label="Ir para página de contato"><span aria-hidden="true">↗</span></a><span class="closing-watermark">TA</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="brand" href="index.html"><span class="brand-mark">TA</span><span>Thiago Augusto<span class="brand-dot">.</span></span></a><span class="footer-copy">© <span data-year>2026</span> Thiago Augusto</span><div class="footer-links"><a href="contato.html">Contato</a><a href="https://www.linkedin.com/in/thiago-augusto-aa160468/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></footer>
 </body>
 </html>
